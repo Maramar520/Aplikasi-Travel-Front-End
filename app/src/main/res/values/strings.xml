@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Travellerapp</string>
+    <string name="explore">explore</string>
+    <string name="search">search</string>
+    <string name="sort">sort</string>
+    <string name="favorite">favorite</string>
+    <string name="hello_traveller">Hello, Traveller</string>
+    <string name="Mau_kemana_kita_hari_ini">Mau kemana kita hari ini?</string>
+    <string name="yuk_kunjungin">Yuk, kunjungin!</string>
+    <string name="todo">TODO</string>
+    <string name="title">Title</string>
+</resources>
