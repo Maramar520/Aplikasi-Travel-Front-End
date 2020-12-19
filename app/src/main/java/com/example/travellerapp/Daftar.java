@@ -1,30 +1,22 @@
 package com.example.travellerapp;
 
-import androidx.annotation.NonNull;
-import android.content.Intent;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.MenuItemCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.provider.ContactsContract;
-import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.SearchView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.util.ArrayList;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity {
+public class Daftar extends AppCompatActivity {
 
     RecyclerView mRecyclerView;
     FirebaseDatabase mFirebaseDatabase;
@@ -36,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_daftar);
         imageSliderModelList = new ArrayList<>();
         sliderView = findViewById(R.id.imageSlider);
 

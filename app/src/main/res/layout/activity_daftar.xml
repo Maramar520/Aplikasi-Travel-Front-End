@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFFFFF"
     android:orientation="horizontal"
-    tools:context=".MainActivity">
+    tools:context=".Daftar">
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardProfilePicture"
@@ -121,15 +121,16 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
-        android:layout_width="382dp"
-        android:layout_height="266dp"
+        android:layout_width="385dp"
+        android:layout_height="191dp"
         android:layout_marginTop="184dp"
-
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.448"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textGoing"
-        app:layout_goneMarginStart="20dp" />
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_goneMarginStart="20dp"
+        tools:listitem="@layout/row" />
 
     <Button
         android:id="@+id/map"

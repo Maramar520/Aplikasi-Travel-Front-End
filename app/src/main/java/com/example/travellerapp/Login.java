@@ -30,7 +30,7 @@ public class Login extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (user.getText().toString().equals("admin") && pass.getText().toString().equals("admin")) {
-                    Intent i = new Intent(Login.this, MainActivity.class);
+                    Intent i = new Intent(Login.this, Daftar.class);
                     startActivity(i);
                     Toast.makeText(getApplicationContext(), "Login Sukses", Toast.LENGTH_SHORT).show();
                 }else{
