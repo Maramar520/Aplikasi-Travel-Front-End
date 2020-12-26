@@ -2,7 +2,7 @@ package com.example.travellerapp;
 
 public class Model {
 
-    String title, image, description;
+    String title, image, description, price;
 
     public String getTitle() {
         return title;
@@ -26,6 +26,14 @@ public class Model {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getPrice() {
+        return price;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
     }
 
     public Model(){
