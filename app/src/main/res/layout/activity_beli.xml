@@ -6,17 +6,149 @@
     android:layout_height="match_parent"
     tools:context=".Beli">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerView2"
-        android:layout_width="406dp"
-        android:layout_height="356dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="390dp"
+        android:layout_height="168dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/rImageView"
+            android:layout_width="140dp"
+            android:layout_height="134dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="234dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/prambanan"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/rTitleTv"
+            android:layout_width="119dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="54dp"
+            android:gravity="left"
+            android:text="Perambanan"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga"
+            android:layout_width="105dp"
+            android:layout_height="17dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="279dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="69dp"
+            android:gravity="right"
+            android:text="Rp 40.000"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="113dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="35dp"
+            android:gravity="right"
+            android:text="x2"
+            android:textColor="#000000"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="390dp"
+        android:layout_height="168dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/row_ticket"/>
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout2">
+
+        <ImageView
+            android:id="@+id/rImageView1"
+            android:layout_width="140dp"
+            android:layout_height="134dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="234dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/keratonjogja"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/rTitleTv1"
+            android:layout_width="119dp"
+            android:layout_height="49dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="176dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="100dp"
+            android:layout_marginBottom="54dp"
+            android:gravity="left"
+            android:text="Keraton Jogja"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/harga1"
+            android:layout_width="105dp"
+            android:layout_height="17dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="279dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="69dp"
+            android:gravity="right"
+            android:text="Rp 10.000"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="113dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="6dp"
+            android:layout_marginBottom="35dp"
+            android:gravity="right"
+            android:text="x1"
+            android:textColor="#000000"/>
+    </RelativeLayout>
 
     <Button
         android:id="@+id/cancel"
@@ -50,23 +182,23 @@
         android:id="@+id/count"
         android:layout_width="59dp"
         android:layout_height="50dp"
+        android:gravity="center"
+        android:text="3"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.957"
+        app:layout_constraintHorizontal_bias="0.958"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.669"
-        android:text="0"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:textStyle="bold" />
+        app:layout_constraintVertical_bias="0.634" />
 
     <TextView
         android:id="@+id/price"
         android:layout_width="167dp"
         android:layout_height="32dp"
         android:gravity="right"
-        android:text="$ Price/Item"
+        android:text="Rp 40.000/x2"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -74,14 +206,29 @@
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761" />
+        app:layout_constraintVertical_bias="0.714" />
+
+    <TextView
+        android:id="@+id/price1"
+        android:layout_width="167dp"
+        android:layout_height="32dp"
+        android:gravity="right"
+        android:text="Rp 10.000/x1"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.938"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.777" />
 
     <TextView
         android:id="@+id/total"
         android:layout_width="167dp"
         android:layout_height="44dp"
         android:gravity="right"
-        android:text="$ Total"
+        android:text="Rp 90.000"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"

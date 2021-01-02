@@ -56,10 +56,10 @@ public class Daftar extends AppCompatActivity {
         buy = findViewById(R.id.buy);
         cart = findViewById(R.id.cart);
 
-        imageSliderModelList.add(new ImageSliderModel(R.drawable.one));
-        imageSliderModelList.add(new ImageSliderModel(R.drawable.two));
-        imageSliderModelList.add(new ImageSliderModel(R.drawable.three));
-        imageSliderModelList.add(new ImageSliderModel(R.drawable.four));
+        imageSliderModelList.add(new ImageSliderModel(R.drawable.satu));
+        imageSliderModelList.add(new ImageSliderModel(R.drawable.dua));
+        imageSliderModelList.add(new ImageSliderModel(R.drawable.tiga));
+        imageSliderModelList.add(new ImageSliderModel(R.drawable.empat));
 
         sliderView.setSliderAdapter(new ImageSliderAdapter(this, imageSliderModelList));
 
