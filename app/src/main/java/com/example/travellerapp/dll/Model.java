@@ -1,4 +1,4 @@
-package com.example.travellerapp;
+package com.example.travellerapp.dll;
 
 public class Model {
 

@@ -1,4 +1,4 @@
-package com.example.travellerapp;
+package com.example.travellerapp.dll;
 
 import android.content.Context;
 import android.view.View;
@@ -8,6 +8,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.travellerapp.R;
 import com.squareup.picasso.Picasso;
 
 public class ViewHolder extends RecyclerView.ViewHolder {
@@ -35,11 +36,15 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         });
     }
 
-    public void setDetails(Context ctx, String title, String image){
+    public void setDetails(Context ctx, String title, String image, String description, String price){
         TextView mTitleTv = mView.findViewById(R.id.rTitleTv);
         ImageView mImageTv = mView.findViewById(R.id.rImageView);
+        TextView mDesc = mView.findViewById(R.id.description);
+        TextView mPrice = mView.findViewById(R.id.price);
 
         mTitleTv.setText(title);
+        mDesc.setText(description);
+        mDesc.setText(price);
         Picasso.get().load(image).into(mImageTv);
 
     }

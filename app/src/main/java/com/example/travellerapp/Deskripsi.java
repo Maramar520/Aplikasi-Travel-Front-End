@@ -3,16 +3,21 @@ package com.example.travellerapp;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
 public class Deskripsi extends AppCompatActivity {
 
-    private ImageView image;
-    private TextView title,  description, price;
+    private ImageView imagedesc;
+    private TextView titledesc,  descriptiondesc;
+    private Button cancel1, get1;
+    private ImageView cart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,22 +30,40 @@ public class Deskripsi extends AppCompatActivity {
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setDisplayShowHomeEnabled(true);
 
-        image = findViewById(R.id.image);
-        title = findViewById(R.id.title);
-        //description = findViewById(R.id.description);
-        //price = findViewById(R.id.price);
+        imagedesc = findViewById(R.id.image);
+        titledesc = findViewById(R.id.title);
+        descriptiondesc = findViewById(R.id.description);
+        cancel1 = findViewById(R.id.cancel);
+        get1 = findViewById(R.id.get);
+        cart = findViewById(R.id.imageView1);
 
-        byte[] bytes = getIntent().getByteArrayExtra("image");
-        String mtitle = getIntent().getStringExtra("title");
-        Bitmap bmp = BitmapFactory.decodeByteArray(bytes, 0, bytes.length);
+        imagedesc.setImageResource(getIntent().getExtras().getInt("image_id"));
+        titledesc.setText(getIntent().getExtras().getString("title_id"));
+        descriptiondesc.setText(getIntent().getExtras().getString("desc_id"));
 
-        title.setText(mtitle);
-        image.setImageBitmap(bmp);
-    }
+        cancel1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Deskripsi.this, Daftar.class);
+                startActivity(intent);
+            }
+        });
 
-    @Override
-    public boolean onSupportNavigateUp() {
-        onBackPressed();
-        return true;
+        get1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Deskripsi.this, Beli.class);
+                startActivity(intent);
+            }
+        });
+
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Deskripsi.this, Beli.class);
+                startActivity(intent);
+            }
+        });
+
     }
 }
