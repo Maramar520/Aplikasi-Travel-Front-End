@@ -12,7 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Beli"></activity>
-        <activity android:name=".Deskripsi" />
+        <activity android:name=".Deskripsi"
+            android:parentActivityName=".Daftar"></activity>
 
         <meta-data
             android:name="com.google.android.gms.ads.AD_MANAGER_APP"
@@ -25,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Daftar" />
+        <activity android:name=".Daftar"></activity>
     </application>
 
 </manifest>

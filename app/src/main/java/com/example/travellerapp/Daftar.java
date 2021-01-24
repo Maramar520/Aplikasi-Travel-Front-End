@@ -24,11 +24,6 @@ import android.widget.Filter;
 import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
-
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.Query;
 import com.smarteist.autoimageslider.SliderView;
 
 import java.io.ByteArrayOutputStream;
@@ -43,8 +38,6 @@ public class Daftar extends AppCompatActivity {
     private ImageView cart;
 
     RecyclerView mRecyclerView;
-    FirebaseDatabase mFirebaseDatabase;
-    DatabaseReference mRef;
 
     SliderView sliderView;
     List<ImageSliderModel>imageSliderModelList;
@@ -73,8 +66,6 @@ public class Daftar extends AppCompatActivity {
         mRecyclerView.setHasFixedSize(true);
 
         mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        //mFirebaseDatabase = FirebaseDatabase.getInstance();
-        //mRef = mFirebaseDatabase.getReference("Data");
 
         viewlist= new ArrayList<>();
         viewlist.add(new ViewModel(R.drawable.boro, "Borobudur", "Candi Borobudur terletak di Magelang"));

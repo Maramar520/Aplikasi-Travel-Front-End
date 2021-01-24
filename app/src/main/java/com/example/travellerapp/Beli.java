@@ -9,17 +9,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.firebase.ui.database.FirebaseRecyclerAdapter;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-
 public class Beli extends AppCompatActivity {
 
     private Button cancel;
-
-    RecyclerView mRecyclerView;
-    FirebaseDatabase mFirebaseDatabase;
-    DatabaseReference mRef;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
